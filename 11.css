@@ -1,0 +1,41 @@
+#lpage{
+    color :aliceblue;
+    background-color: rgb(16, 59, 160);
+    border: 2px solid black;
+}
+
+/* id selectors */
+#whole {
+    border-radius: 1%;
+    border: 6px solid black;
+    background-color :cornflowerblue;
+    width : 100%;
+    text-align :center;
+    margin :auto;
+}
+
+/* group selectors in css */
+header,footer,p,span{
+    color: rgb(255, 230, 0);
+    font-display: swap;
+    background-color :rgb(33, 7, 183);
+    font-style: italic;
+    border : 2px solid black;
+    text-align: center;
+}
+
+/* Class selectors */
+.guestimg{
+    width :100px;
+    height: 100px;
+    align-content: center;
+    mix-blend-mode: color-burn;
+}
+
+#login{
+    text-align : center;
+    border : 2px solid black;
+    width: auto;
+    background-color: aliceblue;
+    color :black;
+}

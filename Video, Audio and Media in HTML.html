@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Video, Audio and Media in HTML.css">
+    <title>Video, Audio and Media in HTML</title>
+</head>
+<body>
+    <div class="vbase">
+    <h2>Video, Audio and Media in HTML</h2>
+    <video src="Diljit Dosanjh _Lemonade_ (Visualiser) _ Drive Thru.mp4" height="255" controls poster="IMG_20240427_205623.jpg"></video>
+    <p class="bold">Diljit Dosanjh _Lemonade_ (Visualiser)</p>
+    </video>
+    <br>
+    <h3>Attributes for Video Tag </h3>
+    <ul Type="circle">
+        <li>src: Specifies the path to the video file.</li>
+        <li>controls: Adds video controls, like play, pause, and volume.</li>
+        <li>autoplay: Automatically starts playing the video when the page loads.
+        <li>loop: Repeats the video once it ends.</li>
+        <li>muted: Mutes the video by default.</li>
+        <li>poster: Specifies an image to be displayed before the video starts playing.</li>
+        <li>width and height: Specifies the dimensions of the video.</li>
+    </ul>
+    </div>
+    <hr>
+    <div class="abase">
+    <h3>Audio</h3>
+    <img src="https://a10.gaanacdn.com/gn_img/albums/XYybzNrb2g/ybzN5Qxgb2/size_l.jpg" alt="Error loading" class="imgborder"><br>
+    <audio src="Diljit Dosanjh _Lemonade_ (Visualiser) _ Drive Thru - Copy.mp3" controls></audio>
+    <p class="bold">Diljit Dosanjh _Lemonade_ (Visualiser)</p>
+    <br>
+    <h3>Attributes for Audio Tag</h3>
+    <ul Type="circle">
+        <li>src: Specifies the path to the audio file.</li>
+            <li>controls: Adds audio controls, like play, pause, and volume.</li>
+            <li>autoplay: Automatically starts playing the audio when the page loads.</li>
+            <li>loop: Repeats the audio once it ends.</li>
+            <li>muted: Mutes the audio by default.</li>
+            <li>preload: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none')</li>
+    </ul>
+    </div>
+    <br><hr>
+    <div class="mbase">
+    <h2>Media</h2>
+    <h4>SVG in Html</h4>
+    <p>SVG is a format through which we can create images at very high graphics vector images</p>
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="5" fill="Yellow" />
+    </svg>
+    <br>
+    <p>we can also display svg image using img but we have to put 'xmlns="http://www.w3.org/2000/svg' in svg otherwise it will not display svg image on browser</p>
+    <br>
+    <img src="img.svg" alt="my svg img">
+    <br>
+    <h4>Iframes in HTML</h4>
+    <p>An iFrame is an HTML element that enables an inline frame for the embedding of external content. Essentially, you can load another web page within a designated area of your current webpage.</p>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=eA4FfctOHWZS6H2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+CSS (Cascading Style Sheets) is a powerful language used to control the presentation of web pages. It allows you to style HTML or XML documents with ease, making your web pages look attractive and professional.
+
+### Key Features of CSS:
+
+1. **Selectors**: These are used to target the HTML elements you want to style.
+2. **Properties and Values**: These define the specific styles you want to apply to the selected elements.
+3. **Box Model**: This concept describes the rectangular boxes generated for elements, including margins, borders, padding, and the actual content.
+4. **Flexbox**: A layout model that helps you align and distribute space among items in a container.
+5. **Grid**: A powerful system for creating complex and responsive web layouts.
+6. **Media Queries**: These allow your content to adapt to different screen sizes and resolutions.
+7. **Pseudo-classes and Pseudo-elements**: These are used to style elements based on their state or position in the document.
+
+### Basic CSS Syntax:
+
+/* This is a comment in CSS */
+
+/* Select an HTML element (e.g., <p>) and apply styles to it */
+p {
+    color: blue; /* Sets the text color to blue */
+    font-size: 16px; /* Sets the font size to 16 pixels */
+    margin: 10px; /* Adds a 10-pixel margin around the element */
+}
+
+/* Select an element with a specific class (e.g., <div class="container">) */
+.container {
+    width: 100%; /* Sets the width of the element to 100% of its parent */
+    padding: 20px; /* Adds 20 pixels of padding inside the element */
+    background-color: lightgray; /* Sets the background color to light gray */
+}
+
+/* Select an element with a specific ID (e.g., <h1 id="title">) */
+#title {
+    text-align: center; /* Centers the text inside the element */
+    font-weight: bold; /* Makes the text bold */
+    color: darkred; /* Sets the text color to dark red */
+}

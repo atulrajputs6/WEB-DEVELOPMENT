@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image, list and tables in html</title>
+
+    <!-- link is used to link && rel stands for relation && href is used to specify url or source of linked object-->
+    <link rel="stylesheet" href="sigma5.css">
+</head>
+<body>
+
+    <h3>Linking of image</h3>
+
+    <!-- img is used to link img && src= source of img && alt is description if img doesn't load so it shows alt txt height,width is used to tell image length -->
+    <img src="IMG_20240427_205623.jpg" alt="atul's img" height="230">
+    <br>
+
+    <h3>table creation</h3>
+    <table>
+        <caption>Employee details</caption>
+
+        <!-- tr is table row && thead is used to tell table head-->
+         <thead>
+            <!-- header -->
+        <tr>
+
+            <!-- th is table head && td is table data -->
+            <th>Name</th>
+            <th>designation</th>
+            <th>Age</th>
+        </tr>
+        </thead>
+
+        <!-- tbody is used to tell table body basically it s used to group table -->
+        <tbody>
+        <tr>
+            <!-- colspan is used to cover 2 column & rowspan is used to cover 2 rows -->
+            <td>Atul</td>
+            <td rowspan="4">Programmer</td>
+            <td rowspan="2">21</td>
+        </tr>
+        <tr>
+            <td>Aditya</td>
+
+        </tr>
+        <tr>
+            <td>Ishika</td>
+            <td>22</td>
+        </tr>
+    </tbody>
+    
+    <!-- tfoot is footer of table -->
+    <tfoot>
+        <tr>
+            <td colspan="2">Vivek</td>
+            <td>21</td>
+        </tr>
+         </tfoot>
+    </table>
+
+    <h3>list creation</h3>
+
+    <!-- ul is unordered list && li Stands for list item && type is used to specify list format-->
+     <ul Type="Disc">Friend list
+        <li>atul</li>
+        <li>Aditya</li>
+        <li>Ishika</li>
+        <li>Vivek</li>
+     </ul>
+
+     <!-- ol Stands For Ordered list  && li Stands for list item && Type is used to specify format of list-->
+      <ol type="1"> Fruits list
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Pineaple</li>
+      </ol>
+</body>
+</html>

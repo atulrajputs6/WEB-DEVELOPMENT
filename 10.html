@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Tutorial - 1</title>
+
+         <!-- external CSS Link  -->
+         <!-- if we put it before internal CSS internal CSS given priority. -->
+        <link rel="stylesheet" href="10External.css">
+        
+        <!-- internal CSS -->
+        <style>
+            p{
+                /* if we put it before external CSS it will be given low priority as compare to external CSS */
+                color :blueviolet;
+            }
+            </style>
+    </head>
+    <body>
+        <h3>This is CSS tutorial -1</h3>
+
+        <!-- Internal CSS used above in head of html -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea mollitia! Et mollitia vitae ab accusantium, nobis quis a itaque?</p>
+
+        <!-- inline CSS -->
+        <p style="color :crimson">This tutorial will teach us about HTML/CSS. Here we used inline CSS and inline CSS have high priority over internal CSS</p>
+
+        <!-- External CSS -->
+        <p class="blackbackground">Here we have imlemented an external CSS whose name is 10External.css from our file.</p>
+    </body>
+</html>
+
+
+<!-- when we add internal CSS and external CSS in header the CSS Added after will take priority if we can to give above CSS priority or some part of it priority we need too put !important at the end of line. -->

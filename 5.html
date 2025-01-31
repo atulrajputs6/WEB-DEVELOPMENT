@@ -1,0 +1,82 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome">
+        <title>Tutorial - 6</title>
+        <meta name="keywords" content="Forms_tags,input_tags, htmml_tags form_and_inputs, html_tags">
+    </head>
+    <body>
+        <h1><strong>Forms And Input Tags </strong></h1>
+        <p>This tutorial is all about putting Forms and Input tags in Html Code</p>
+        <hr>
+        <h3>Creater's Image</h3>
+        <img src="IMG_20240427_205623.jpg" alt="Creater is on holiday" width="200" hight="300">
+        <p><em>Hello Guy's I am creater of this HTML Program i am still learning and today is 20 Jan 2025</em></p>
+        <img src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?rs=1&pid=ImgDetMain" alt="instagarm" width="50px" hight="50px">
+        <a href="https://www.instagram.com/mr_rajput._20/" target="_blank">Visit My Instagarm</a>
+        <hr>
+        <h2>Forms</h2>
+        <!-- < Form is used to create forms / action is used to tell all the form data will be stored at last (all backend data)-->
+        <!-- here we mentioned all the data in form will be stored/submit in backend.php name file -->
+         <form action="backend.php">
+            <!-- label tage is used to put label on column name = so the result will be when we click on name of lable it will show us column where we need to enter data -->
+            <label for="name">
+            <div>
+                <!-- Div tag means devision it a block element is used to cover a whole block or line or we don't need to used br tag for line break and new code will be in next line //   id & for tag should be same for label to work (like <label for= name so id will be id = name)-->
+                Name : <input type="text" name="myName" id="name">
+            </div></label>
+            <br>
+            <label for="role">
+            <div>
+                <!-- name is used to put the name of input like a= putted in role / type is used to tell which type of input we are taking number or character or checkbox or radio -->
+                Role : <input type="text" name="myRole" id="role">
+            </div></label>
+            <br>
+            <label for="email">
+            <div>
+                Email : <input type="email" name="myEmail" id="email">
+            </div></label>
+            <br>
+            <label for="date">
+            <div>
+                Date : <input type="date" name="myDate" id="date">
+            </div></label>
+            <br>
+            <label for="bonus">
+            <div>
+                Bonus : <input type="number" name="myBonus" id="bonus">
+            </div></label>
+            <br>
+            <label for="eligiblity">
+            <div>
+                <!-- checkd is used to make it default checked otherwise it will be unchecked in default -->
+                Are You Eligible : <input type="checkbox" name="myEligiblity" id="eligiblity" checked>
+            </div></label>
+            <br>
+            <div>
+                Gender : Male <input type="radio" name="myGender">
+                Female <input Type="radio" name="myGender">
+            </div>
+            <br>
+            <label for="car">
+                <div>
+                 CAR : <select name="myCar" id="car">
+                        <option value="BMW">BMW</option>
+                        <option value="Swift" selected>SWIFT</option>
+                        <option value="Alto">ALTO</option>
+                        <option value="Thar">THAR</option>
+                    </select>
+                </div>
+            </label>
+            <label for="write">
+            Write about yourself : <br> <textarea name="mtText" id="write" cols="50" rows="10"></textarea></label>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now"> 
+                <input type="reset" Value="Reset now">
+            </div>
+         </form>
+    </body>
+    </html>

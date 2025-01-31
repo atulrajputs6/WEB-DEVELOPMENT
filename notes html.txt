@@ -1,0 +1,317 @@
+# HTML Notes
+
+## Index
+1. [What is HTML?](#what-is-html)
+2. [Basic Structure of an HTML Document](#basic-structure-of-an-html-document)
+3. [Semantic HTML Elements](#semantic-html-elements)
+4. [Inline and Block Elements in HTML](#inline-and-block-elements-in-html)
+5. [Meta Tags in HTML](#meta-tags-in-html)
+6. [Styling in HTML](#styling-in-html)
+
+## What is HTML?
+HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of a web page using markup.
+
+## Basic Structure of an HTML Document
+An HTML document has a basic structure that includes several key elements:
+1. `<!DOCTYPE html>`: This declaration defines the document type and version of HTML. It should be the first line in an HTML document.
+2. `<html>`: This element is the root element of an HTML page.
+3. `<head>`: This element contains meta-information about the HTML document, such as its title and links to stylesheets.
+4. `<title>`: This element sets the title of the HTML document, which is displayed in the browser's title bar or tab.
+5. `<body>`: This element contains the content of the HTML document, such as text, images, links, and other media.
+
+### Example of a Basic HTML Document
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example HTML Document</title>
+</head>
+<body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+    <a href="https://www.example.com">This is a link</a>
+</body>
+</html>
+## Semantic HTML Elements
+Semantic HTML elements clearly describe their meaning in a way that both the browser and the developer can understand. Examples include `<header>`, `<footer>`, `<article>`, and `<section>`.
+
+### Example of Semantic HTML Elements
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic HTML Example</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the home section.</p>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>This is the about section.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>This is the contact section.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+</body>
+</html>
+## Inline and Block Elements in HTML
+HTML elements can be categorized as either inline or block elements.
+
+### Inline Elements
+Inline elements do not start on a new line and only take up as much width as necessary. Examples include `<span>`, `<a>`, and `<img>`.
+
+### Block Elements
+Block elements start on a new line and take up the full width available. Examples include `<div>`, `<p>`, and `<h1>`.
+
+### Example of Inline and Block Elements
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline and Block Elements Example</title>
+</head>
+<body>
+    <h1>This is a Block Element</h1>
+    <p>This is another Block Element.</p>
+    <a href="https://www.example.com">This is an Inline Element</a>
+    <span>This is another Inline Element.</span>
+</body>
+</html>
+
+## Meta Tags in HTML
+Meta tags provide metadata about the HTML document. They are placed inside the `<head>` element and are not displayed on the page.
+
+### Common Meta Tags
+1. `<meta charset="UTF-8">`: Specifies the character encoding for the HTML document.
+2. `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Sets the viewport to make the website responsive.
+3. `<meta name="description" content="A brief description of the page">`: Provides a description of the page for search engines.
+
+### Example of Meta Tags
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meta Tags Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an example of meta tags in HTML.">
+</head>
+<body>
+    <h1>Meta Tags Example</h1>
+    <p>This document contains examples of common meta tags.</p>
+</body>
+</html>
+
+## Styling in HTML
+Styling in HTML can be done using CSS (Cascading Style Sheets). CSS can be applied in three ways: inline, internal, and external.
+
+### Inline CSS
+Inline CSS is used to apply a unique style to a single HTML element using the `style` attribute.
+
+### Internal CSS
+Internal CSS is used to define styles in the `<head>` section of an HTML document using the `<style>` element.
+
+### External CSS
+External CSS is used to define styles in an external file, which is linked to the HTML document using the `<link>` element.
+
+### Example of Styling in HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styling Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .highlight {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="highlight">This is a Heading</h1>
+    <p>This is a paragraph with <span style="color: blue;">inline styling</span>.</p>
+</body>
+</html>
+## Forms in HTML
+Forms are used to collect user input. They contain form elements such as text fields, checkboxes, radio buttons, and submit buttons.
+
+### Example of a Simple Form
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+## Tables in HTML
+Tables are used to display data in a tabular format. They are created using the `<table>` element, along with `<tr>` for table rows, `<th>` for table headers, and `<td>` for table data cells.
+
+### Example of a Simple Table
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+</head>
+<body>
+    <h1>Student Grades</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>B</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+## Lists in HTML
+Lists are used to group related items. There are three types of lists in HTML: unordered lists, ordered lists, and definition lists.
+
+### Unordered List
+An unordered list is a list of items in which the order does not matter. It is created using the `<ul>` element and `<li>` for list items.
+
+### Ordered List
+An ordered list is a list of items in which the order does matter. It is created using the `<ol>` element and `<li>` for list items.
+
+### Definition List
+A definition list is a list of terms and their definitions. It is created using the `<dl>` element, along with `<dt>` for terms and `<dd>` for definitions.
+
+### Example of Lists
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lists Example</title>
+</head>
+<body>
+    <h1>Unordered List</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <h1>Ordered List</h1>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+    <h1>Definition List</h1>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+</body>
+</html>
+## Links in HTML
+Links are used to navigate from one page to another. They are created using the `<a>` (anchor) element.
+
+### Example of a Link
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Links Example</title>
+</head>
+<body>
+    <h1>Links in HTML</h1>
+    <p>This is an example of a link to <a href="https://www.example.com">Example.com</a>.</p>
+    <p>This is an example of an email link: <a href="mailto:someone@example.com">Send Email</a>.</p>
+</body>
+</html>
+## Images in HTML
+Images are used to display pictures on a web page. They are added using the `<img>` element, which requires the `src` attribute to specify the image source and the `alt` attribute to provide alternative text.
+
+### Example of an Image
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images Example</title>
+</head>
+<body>
+    <h1>Images in HTML</h1>
+    <img src="https://www.example.com/image.jpg" alt="Example Image">
+</body>
+</html>
+
+## Audio and Video in HTML
+HTML5 introduced new elements for embedding audio and video content: `<audio>` and `<video>`.
+
+### Example of Audio
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Example</title>
+</head>
+<body>
+    <h1>Audio in HTML</h1>
+    <audio controls>
+        <source src="audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
+
+### Example of Video
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Example</title>
+</head>
+<body>
+    <h1>Video in HTML</h1>
+    <video width="320" height="240" controls>
+        <source src="video-file.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>
+
+## Iframes in HTML
+Iframes are used to embed another HTML document within the current document. They are created using the `<iframe>` element.
+
+### Example of an Iframe
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframe Example</title>
+</head>
+<body>
+    <h1>Iframes in HTML</h1>
+    <iframe src="https://www.example.com" width="600" height="400"></iframe>
+</body>
+</html>
+
+## Conclusion
+HTML is the foundation of web development. Understanding its elements and how to use them is essential for creating well-structured and accessible web pages. This guide covers the basics of HTML, including its structure, elements, and how to style and format content. Continue practicing and exploring more advanced topics to become proficient in HTML.

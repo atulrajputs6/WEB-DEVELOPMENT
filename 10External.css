@@ -1,0 +1,6 @@
+p.blackbackground{
+    color :azure;
+    /* important is used o it can't be ignored */
+    background-color :black !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

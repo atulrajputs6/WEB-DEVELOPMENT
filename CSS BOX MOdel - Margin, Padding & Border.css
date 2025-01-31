@@ -1,0 +1,42 @@
+#tcontent{
+    border: 2px solid black;
+    border-style: double;
+    border-width: 2px;
+    margin: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;  
+}
+#mbox{
+    border : 2px solid black;
+    border-radius: 15%;
+    border-width: 8px;
+    border-style: double;
+    margin: 17px;
+    padding: 17px;
+    font-weight: 400;
+    text-align: center;
+    background-image: url('https://wallpapercave.com/wp/wp7999562.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */ 
+}
+.ltopic{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#contain{
+    border : 2px solid black;
+    border-radius: 15%;
+    border-width: 8px;
+    border-style: double;
+    margin: 17px;
+    padding: 17px;
+    font-weight: 400;
+    text-align: center;
+    background-image: url('https://cdn.vectorstock.com/i/500p/17/74/digital-red-background-vector-2681774.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position :center;
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */ 
+}

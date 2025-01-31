@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box-Model</title>
+    <link rel="stylesheet" href="CSS BOX MOdel - Margin, Padding & Border.css">
+    <style>
+        /* here * stands for universal selector */
+        *{
+          font-style: italic;
+        }
+        .box{
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .boxModel{
+            border: 2px solid black;
+            background-size: cover;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-image: url('https://th.bing.com/th/id/R.ee4f7a3730f8dd261ee829a698216648?rik=wMUk5kUeYK4vsQ&pid=ImgRaw&r=0');
+        }
+    </style>
+</head>
+<body>
+    <hr><hr><br>
+    <div id="mbox">
+    <h4>CSS BOX-MODEL</h4>
+    <p>The CSS Box model defines how elements are rendered and how their dimensions are calculated.
+<br>
+        It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+<br>    
+        The box model consists of four main components, which are.</p>
+        <ol type="1" id="tcontent">
+        <li class="ltopic">Content</li>
+        <summary>The innermost component of the box model is the actual content of the element. It can be text, image, video, etc.<br>
+        The content area is defined by the width and height properties.</summary>
+        <li class="ltopic">Padding</li>
+        <summary>The space between the actual content and the border of the element is the padding.<br>
+        The padding area is defined by the property padding. For more details, follow the CSS Padding tutorial.</summary>
+        <li class="ltopic">Border</li>
+        <summary>The border surrounds the content and padding and gives the visual border of the element.<br>
+        The border properties can be controlled using the border keyword. For more details, follow the CSS Borders tutorial.</summary>
+        <li class="ltopic">Margin</li>
+        <summary>The margin is the space outside the element that separates it from other elements in the layout.<br>
+        The margin of the element is controlled by the margin property. For more details, follow the CSS Margin tutorial</summary>
+        </ol>
+    </div>
+    <hr>
+    <hr>
+    <br>
+    <div id="contain">
+    <h4 class="boxModel">Here we are start putting item and experimenting</h4>
+    <div class="box box1">I am a item Box</div>
+     </div>
+</body>
+</html>

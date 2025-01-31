@@ -8,23 +8,61 @@
     <style>
         /* visit google fonts to import fonts */
         @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rock+Salt&display=swap');
+        *{
+            /* text-align is used to align text at specific position */
+            text-align: center;
+
+        }
         p{
             font-family: Lavishly Yours, fantasy, cursive;
             font-size: 2.5rem;
+            /* https://codepen.io/web-dot-dev/pen/ZELGraM */
+            /* color is used to set text color */
             color: crimson;
+            /* to decorate text with underline or overline */
             text-decoration: overline;
+            /* line-height is used to control space between lines , default line-height = 110% to 120%  */
             line-height: 4;
+            /* used to increase or decrease space between letters */
+            letter-spacing: 3px;
+        }
+        h2{
+            /* text-transfor to transform text like capitalize to make every word first letter capital */
+            /* upper case to transform text to UPPERCASE && lowercase to transform text to lowercase */
+            text-transform: capitalize;
+            /* text-decoration to decorate texts */
+            text-decoration : underline;
+            /* to select decoration color */
+            text-decoration-color: cornflowerblue;
+            /* decoration- style to set style */
+            text-decoration-style: wavy;
+            /* it used to set thickness to decoration which is done over text */
+            text-decoration-thickness: 4px;
+            /* The text-indent is used to define the indentation of the first line in each block of text */
+            text-indent: 45px;
+        }
+        .lorem{
+            /* to make border and provide border color and width */
+            border: 12px solid cadetblue;
+            /* t determine texts width */
+            width: 245px;
+            /* word-break used to handle words that does not show completely in the same line due to space issue, break-all is used to break all wrods which does not fit in the same line and put remaining letters in next line, keep-all is used to keep all the letters of the word without breaking means if there is no space it will simply put it in next line */
+            word-break :keep-all;
+            /* text-overflow it is used to specify if our text overflows then what will happen */
+            text-overflow: ellipsis;
+            /* if overflows that what happer */
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
     <h1>Fonts</h1>
+    <h2>about fonts</h2>
     <!-- https://codepen.io/web-dot-dev/pen/yLojrag -->
 
     <!--  -->
     <p>Atul Pratap Singh</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi praesentium illo totam? Quidem dolore porro repudiandae voluptatem impedit vero accusantium earum enim quam quis!</p>
-
+    <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dicta?</p>
     
 </body>
 </html>

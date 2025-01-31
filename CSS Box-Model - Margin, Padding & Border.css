@@ -1,3 +1,11 @@
+#bodybackground{
+    background-image: url('https://thumbs.dreamstime.com/b/smooth-wavy-blue-lines-form-abstract-waves-eps-237565307.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position :center;
+    box-sizing: border-box;
+    background-attachment: fixed;
+}
 #tcontent{
     border: 2px solid black;
     border-style: double;
@@ -38,5 +46,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position :center;
+    box-sizing: border-box;
+    margin: 42px;
+    padding: 32px;
     background-attachment: fixed; /* Keeps the background image fixed during scroll */ 
+}
+.boxTopic{
+    border: 2px solid black;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url('https://th.bing.com/th/id/R.ee4f7a3730f8dd261ee829a698216648?rik=wMUk5kUeYK4vsQ&pid=ImgRaw&r=0');
+    margin: 26px;
+}
+.bimg{
+    width: 480px;
+    height: 320px;
+    border: 4px solid black;
 }

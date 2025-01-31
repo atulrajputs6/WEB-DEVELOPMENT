@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Box-Model</title>
-    <link rel="stylesheet" href="CSS BOX MOdel - Margin, Padding & Border.css">
+    <link rel="stylesheet" href="CSS Box-Model - Margin, Padding & Border.css">
     <style>
         /* here * stands for universal selector */
         *{
@@ -12,19 +12,27 @@
         }
         .box{
             background-color: cornflowerblue;
-            border: 2px solid black;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
-        .boxModel{
+        .box1{
             border: 2px solid black;
-            background-size: cover;
-            text-align: center;
-            background-repeat: no-repeat;
-            background-image: url('https://th.bing.com/th/id/R.ee4f7a3730f8dd261ee829a698216648?rik=wMUk5kUeYK4vsQ&pid=ImgRaw&r=0');
+            /* given 10 pixel padding */
+            padding: 10px;
+            color: darkgreen;
+            height: 224px;
+            /* box-sizing : border means height = content + padding  */
+            box-sizing: border-box;
+        }
+        .box2{
+            color: crimson;
+            border: 2px solid black;
+
         }
     </style>
 </head>
-<body>
+<body id="bodybackground">
     <hr><hr><br>
     <div id="mbox">
     <h4>CSS BOX-MODEL</h4>
@@ -52,8 +60,13 @@
     <hr>
     <br>
     <div id="contain">
-    <h4 class="boxModel">Here we are start putting item and experimenting</h4>
-    <div class="box box1">I am a item Box</div>
+    <h4 class="boxTopic">Here we are start putting item and experimenting</h4>
+    <div class="box box1">I am a Box</div>
+    <div class="box box2">I am another box</div>
+    <hr>
+    <hr>
+    <img class="box bimg" src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/css-box-model/box%20model.png" alt="Box-Model image load error">
+    <hr><hr><br><br>
      </div>
 </body>
 </html>

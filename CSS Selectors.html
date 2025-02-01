@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        
+        /* Element Selector */
+        div{ 
+            background-color: aquamarine;
+        }
+
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* ID Selector */
+        #yellow{
+            background-color: yellow;
+        }
+
+        /* child Selector */
+        /* this Selector only works for direct child element otherwise it will not work */
+        div > p{
+            color: blue;
+            background-color: burlywood;
+        }
+
+        /* Descendent Selector */
+        /* it works always it doesn't matter if the elements is direct child or not. it just need to have that element and it will show its changes */
+        div p{
+            background-color: burlywood;
+            color: blue;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        /* when link has been visited */
+        a:visited{
+            color: green;
+        }
+        /* when link has not visited */
+        a:link{
+            color: red;
+        }
+        /* when clicking on link it will show active style */
+        a:active{
+            background-color: darkorchid;
+        }
+        /* when it touches the link or goes above that element it shows hover style */
+        a:hover{
+            background-color: yellow;
+        }
+
+        /* it means wherever p is available its first child have these style or changes */
+        p:first-child{
+            background-color: darkgrey;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am First child</p>
+        <p>I am Second child</p>
+    </main>
+    <div>
+        i am the first div of the CSS Selectors topic html
+    </div>
+    <div class="red">
+        i am the second div of the CSS Selectors topic html
+        <article>
+            <p>I am inside article tags Paragraph(p) to explain Descendent Selector</p>
+        </article>
+    </div>    
+    <div id="yellow">
+        i am the second div of the CSS Selectors topic html
+        <p>I am a paragraph inside div to explain child Selector</p>
+    </div>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.facebook.com">Go to Facebook</a>
+        <a href="https://www.github.com">Go to github</a>
+</body>
+</html>

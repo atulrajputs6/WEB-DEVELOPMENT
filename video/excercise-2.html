@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-2</title>
+    <style>
+        p{
+            color: white;
+            background-color: blue;
+        }
+
+        /* we set p:first-child to tell in div the first paragraph should have this conditions */
+        /* we can also do it like div p:nth-child() in this brackets there will be number on which child you want to set this style or changes for example if we put 2 in this brackets it will make every div elements 2nd paragraph have these changes or you can say this style */
+        div p:first-child{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Topic - Write a HTMML and CSS Cod eto style a pragraph inside div which contains 5 other paragraphs. The first paragraph must have background color yeallow and text color red. The other paragraph must have background color blue and text color white. The HTML is Written below for your refrence. Do not change it.</h1> -->
+     <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis ut culpa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis ut culpa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis ut culpa.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis ut culpa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis ut culpa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat reiciendis ut culpa.</p>
+     </div>
+</body>
+</html>

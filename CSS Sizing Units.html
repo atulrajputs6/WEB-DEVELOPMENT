@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, % & more</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* its sets width using pixels as a scale & 1280px is size of my pc display*/
+            /* width: 1264px; */
+            /* vw stands for viewport width & it covers width according to viewports of different devicess */
+            width: 80vw;
+            /* we set it to cover 10% height of viewport */
+            height: 10vh;
+            margin: auto;
+            background-color: cornflowerblue;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* its sets width using pixels as a scale & 1280px is size of my pc display*/
+            /* width: 1264px; */
+            /* vw stands for viewport width & it covers width according to viewports of different devicess */
+            width: 80vw;
+            /* we setted so it covers 80% height of viewport */
+            /* height: 80vh; */
+            /* 23px is a margin from above and bottom && auto will be from left and right */
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: cornflowerblue;
+        }
+        .container p{
+            /* em stands for multiplying font size to default or setted font size */
+            /* for example we don't provide font-size above and just put 2em in font size so it will multiply with 16px and take 32px space at running because 16px is default computed font size & vice-versa if we put a size and what ever 1em or 2em or nth em it will give us the multiply of font size and em size font */
+            /* for example above we given 18px font-size and here we gven 4em so result will be 72px font-size */
+
+            /* font-size: 4em; */
+
+            /* rem = root em means font-size given to root multiply for example we putted 12px root font size and here we put font-size 6rem so the root-font size in container will be 8*12= 96px */
+
+            font-size: 2 rem;
+        }
+
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            background-color: chocolate;
+            color: darkseagreen;
+            font-size: 22px;
+            width: 80vw;
+            /* If the viewport height is smaller than the width, the value of 1vmin will be equal to 1% of the viewport height. Similarly, if the viewport width is smaller than the height, the value of 1vmin will be equal to 1% of the viewport width. */
+            /* 1vmin Relative to 1% of viewport's* smaller dimension */
+            /* width: 100vmin; */
+            /* here above it will take 10% of width because we mentioned it */
+
+            /* 1vmax Relative to 1% of viewport's* larger dimension */
+            /* width : 10vmax; */
+        }
+    </style>
+</head>
+<body>
+    <!-- http://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+    <div class="box">
+        this is a box
+    </div>
+    <!-- <span> A span can not have margin auto to make it center</span> -->
+     <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque asperiores sequi velit minus nostrum, repellat quibusdam, aliquam ea officiis ipsa totam dicta magnam natus? Ut autem veritatis laudantium recusandae nam animi libero, quisquam voluptates veniam sapiente, modi possimus sed blanditiis eum quidem porro excepturi nemo eligendi quis perspiciatis. Magni sunt voluptas atque quisquam minima officia repellendus?
+        </p>
+     </div>
+     <div class="mycont">Iam another container Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex numquam ratione?</div>
+</body>
+</html>

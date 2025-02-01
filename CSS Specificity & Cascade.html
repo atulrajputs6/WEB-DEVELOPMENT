@@ -6,42 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Specifity & Cascading</title>
     <style>
+        /* the specificity of this selector is 1 */
         h1 {
             color: cornflowerblue;
         }
-
-        .yellow {
-            color: yellow;
-        }
-
-        .cred {
-            color: red;
-        }
-
+        /* The specificity of this selector  is 10 */       
         .cpurple {
             color: purple;
         }
+        /* The specificity of this selector  is 10 */
+        .yellow {
+            color: yellow;
+        }
+        /* The specificity of this selector  is 10 */   
+        .cred {
+            color: red;
+        }
+        /* The specificity of this selector  is 10 */
         .main{
             border: 4px solid black;
             padding: 8px;
         }
+        /* The specificity of this selector  is 10 */
         .lineheight{
             line-height: 4px;
         }
+        /* The specificity of this selector  is 10 */
         .text-indent{
             text-indent: -12px;
         }
-
+        /* The specificity of this selector  is 10 */
+        /* this is an example of Attribute Selector   */
         [data-x=a]{
             background-color: coral;
+        }
+        /* The specificity of this selector  is 100 */
+        #background{
+            background-color: bisque;
+        }
+
+        /* The specificity of this selector  is 1 + 10 = 11 where 1 is for element & 10 for class  */
+        h2.cpurple{
+            color: purple;
+        }
+
+        /* The specificity of this selector  is 1 + 10 + 10 + 10 + 10 = 41 where a = element so 1 & atul, aditya = class so 10 + 10 = 20 , href = attribute so 10, hover = pseudo class selector so 10 
+        hence 1+10+10+10+10 = 41 */
+        a.atul.aditya[href]:hover{
+            color: aquamarine;
         }
     </style>
 </head>
 
-<body>
+<body id="background">
     <div class="main">
         <h2 class="lineheight">CSS Specificity</h2>
-        <p>CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules.
+        <!-- /* The specificity of this inline selector  is 1000 */ -->
+        <p style="background-color: aquamarine;">CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules.
         It is a value or weight assigned to a CSS selector. The higher the specificity, the more precedence the selector has
         </p>
         <h2 class="lineheight">The Cascade Algorithm</h2>
@@ -60,7 +81,8 @@
 
         <p>Specificity: in this precedence is calculated using this manner {inline style>ID Selector>Class or Attribute>Element Selector>Universal Selector} </p>
 
-        <h4 class="yellow cred cpurple" data-x="a">CSS Specificity using attribute selector</h4>
+        <h4 class="yellow cpurple" data-x="a">CSS Specificity using attribute selector</h4>
+        <h2 class="yellow cred cpurple">hello world</h2>
     </div>
 </body>
 

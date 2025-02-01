@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specifity & Cascading</title>
+    <style>
+        h1 {
+            color: cornflowerblue;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+        .main{
+            border: 4px solid black;
+            padding: 8px;
+        }
+        .lineheight{
+            line-height: 4px;
+        }
+        .text-indent{
+            text-indent: -12px;
+        }
+
+        [data-x=a]{
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2 class="lineheight">CSS Specificity</h2>
+        <p>CSS Specificity helps determine what style will be applied to the HTML element(s) when there are overlapping or multiple CSS rules.
+        It is a value or weight assigned to a CSS selector. The higher the specificity, the more precedence the selector has
+        </p>
+        <h2 class="lineheight">The Cascade Algorithm</h2>
+        <p class="lineheight">CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply to an HTML element.</p>
+        <ol><summary  class="text-indent">Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade algorithm has 4 distinct stages.</summary>
+            <li><b>Position and order of appearance:</b> the order in which your CSS rules appear.</li>
+            <li><b>Specificity:</b> an algorithm that determines which CSS selector has the strongest match.</li>
+            <li><b>Origin:</b> the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser extension, or your authored CSS.</li>
+            <li><b>Importance:</b> some CSS rules are weighted more heavily than others, especially with the <u><b>!important</b></u> rule type.</li>
+        </ol>
+
+    </div>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specifity</h1>
+        <p>Position and Order of appearance : If a same type of selectors is cascaded over same element then the later type will have higher precedence <summary>For Example : there  is element h1 which have multiple class yellow, cred, cpurple lik above then due to same type of selector(class) between cred,cpurple and yellow, the higher recedence will be given to cpurple as comperative to yellow & cred because it is written at the last. as well as if be change there order then the selector written in last given higher precedence {[it is only applicable when there are same type of selector Cascadingover same element]} </summary></p>
+
+        <p>Specificity: in this precedence is calculated using this manner {inline style>ID Selector>Class or Attribute>Element Selector>Universal Selector} </p>
+
+        <h4 class="yellow cred cpurple" data-x="a">CSS Specificity using attribute selector</h4>
+    </div>
+</body>
+
+</html>

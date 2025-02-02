@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display and Visibility</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .invisible {
+            /* Visibility is a property in CSS which affect the visibilty if we put it hidden it will hide the element from display */
+            visibility: hidden;
+        }
+        .collapse{
+            /* Visibility it is also a property of CSS Visibility but it does not only hide element but also removes its space */
+            visibility: collapse;
+        }
+        .tborder{
+            border: 2px solid black;
+            text-indent: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Display and Visibility Properties</h1>
+    <p class="hidden">This paragraph is hidden using display: none.</p>
+    <p class="invisible">This paragraph is invisible using visibility: hidden.</p>
+    <p>This paragraph is visible.</p>
+    
+    <table class="tborder">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Roll No.</th>
+            <th>Subject</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Atul Pratap Singh</td>
+            <td>21</td>
+            <td>2206</td>
+            <td>B. Sc. [ Computer Science</td>
+        </tr>
+        <tr>
+            <td>Aditya Puri</td>
+            <td>20</td>
+            <td>2207</td>
+            <td>B. Sc. [ Computer Science</td>
+        </tr>
+        <tr class="collapse">
+            <td>Ishika Dhaka</td>
+            <td>21</td>
+            <td>2208</td>
+            <td>B. Sc. [ Computer Science</td>
+        </tr>
+        <tr>
+            <td>Vivek Kumar</td>
+            <td>21</td>
+            <td>2209</td>
+            <td>B. Sc. [ Computer Science</td>
+        </tr>
+        <tr>
+            <td>Abhishek Tyagi</td>
+            <td>22</td>
+            <td>2210</td>
+            <td>B. Sc. [ Computer Science</td>
+        </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

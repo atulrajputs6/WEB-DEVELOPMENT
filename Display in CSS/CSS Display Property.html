@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blueviolet;
+
+            /* it is used to display this element as inline element but it also prevent width or height from having effect */
+            /* display: inline; */
+
+            /* inline-block proerty is is CSS display property which helps element to have properties of both inline and block element at the same time it means its elements will be dislayed in the same line like inline elements but they can also have width and height and it doesn't prevent us from putting width or height like display : inline. */
+            display: inline-block;
+            width: 344px;
+            margin: 34px;
+            padding: 45px;
+        }
+
+        .box1 {
+
+            /* Display : none is a CSS property which hides the element and also removes there covered space and other elements act like they dont exist. */
+            /* display: none; */
+
+            /* Visibility: hidden; is a CSS property which hides the elements but does not affect or change there covered space it will hide the element and on that element place there will be space left only  */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Display Property</h3>
+    <!-- http://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        i am a block element
+    </div>
+    <div class="box">I am also a block element</div>
+    <span>I am a Span</span>
+    <span>Element or You Can Say I Am a Inline Element</span>
+</body>
+
+</html>

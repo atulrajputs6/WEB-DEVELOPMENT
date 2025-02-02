@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display - Flex & Grid Property</title>
+    <style>
+        .flex-container {
+            /* display flex ised to type of diplay which is flex */
+            display: flex;
+            /* justify-content is a CSS property which is used to align flex items along the main axis of flex container */ 
+            /* space-around it is used to put space before the first item and after the last item is half the size of the space between the items. */
+            /* this creates equal spacing around each item, making the layout look balanced */
+            justify-content :space-around;
+            /* it is used to align flex items in center */
+            align-items: center;
+            /* it is used to set height = to 100% of viewport height */
+            height: 100vh;
+            /* it is used set flex container background */
+            background-color: #f0f0f0;
+        }
+
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .grid-container {
+
+            /* display is used to tell type of display content type */
+            display: grid;
+
+            /* grid-temple-columns is a property defines the number and size of the columns in grid container. repeat(4, 15fr) :- repeat is function tat repeats specified column size at specified number of times here we told 3 time (3, 15fr) and 15fr is 15 fraction of size is a size of columns in grid */
+            grid-template-columns: repeat(3, 15fr);
+
+            /* gap is used to define space between grid columns */
+            gap: 10px;
+
+            /* background colour of whole grid */
+            background-color: #f0f0f0;
+
+            /* padding between grid columns items and main grid */
+            padding: 10px;
+        }
+
+        .grid-item {
+            /* it is used to define grid- items backgroun color */
+            background-color: #2196f3;
+            /* grid-items text color placed in grid-items */
+            color: white;
+            /* padding in grid item  will be 20px */
+            padding: 20px;
+            /* text-align : center is used to place text in center in grid items */
+            text-align: center;
+            /* font-size of grid items will be 20px */
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Example</h1>
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+        <div class="flex-item">Flex Item 4</div>
+        <div class="flex-item">Flex Item 5</div>
+    </div>
+
+    <h1>Grid Example</h1>
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+        <div class="grid-item">Grid Item 5</div>
+        <div class="grid-item">Grid Item 6</div>
+    </div>
+</body>
+</html>

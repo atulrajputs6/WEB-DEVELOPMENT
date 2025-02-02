@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows And Outlines</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 44px;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+
+            /* The 'box-shadow' property in CSS is used to add shadow effects around an element's frame. 
+        The syntax for 'box-shadow' is: 
+        box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color];
+        
+        In this example:
+        - 5px is the horizontal offset (the shadow will be shifted 5 pixels to the right).
+        - 15px is the vertical offset (the shadow will be shifted 15 pixels down).
+        - 5px is the blur radius (the shadow will be blurred by 5 pixels).
+        - 'red' is the color of the shadow. */
+            box-shadow: 5px 15px 15px black;
+        }
+
+        .text-element {
+            text-shadow: 2px 2px 4px purple;
+
+            /*  The key differences between `outline` and `border` in CSS are:
+
+         1. **Position**:
+               - `border` is drawn inside the element's box, affecting the element's size.
+               - `outline` is drawn outside the element's box and does not affect the element's size.
+
+         2. **Impact on Layout**:
+              - `border` affects the layout and can push other elements.
+              - `outline` does not affect the layout and does not push other elements.
+
+         3. **Customization**:
+              - `border` can be styled with different sides (top, right, bottom, left).
+              - `outline` is uniform around the element and cannot be styled per side.*/
+              
+            /* Outline follows border if it curvy at edge it will also be curvy otherwise it stay normal */
+            outline: 2px solid black;
+
+            /* The `outline-offset` property in CSS specifies the space between an element's outline and its border or edge. */
+            outline-offset: 8px;
+            border: 2px solid red;
+            /* border can be curvy at edges but outlines can't */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">I am A block element in a box</div>
+    <br>
+    <br>
+    <p class="text-element">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ab excepturi quidem
+        cumque et repellat, at, aspernatur quia quis tempora nihil itaque quibusdam reprehenderit magnam exercitationem
+        voluptas consequuntur deserunt veritatis fugit debitis! Reprehenderit accusamus asperiores totam cumque,
+        blanditiis porro incidunt ab quas reiciendis, iure quasi. Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Quos ea magni veniam, maxime quia iusto repudiandae et distinctio, illum accusamus, sit tempore
+        consequuntur quaerat.</p>
+</body>
+
+</html>

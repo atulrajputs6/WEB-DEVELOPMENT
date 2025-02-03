@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box {
+            width: 40vw;
+            height: 20vh;
+            border: 4px solid black;
+            /* It is a CSS property in which if a horizontal or vertical scroll is needed in element it will automatically provide scroll as per need if needed both H & V or just vertical */
+            /* overflow: auto;  */
+
+            /* It is a property in CSS which can be used to hide overflow content */
+            /* overflow: hidden; */
+
+            /* Its a property which always provides overflow if when text is not overflowing */
+            /* overflow: scroll; */
+
+            /* It can be used to put indivisualy or simuntaneously x stands for horizontal, y stands for vertical (x,y)  */
+            /* overflow-x: hidden; */
+            /* overflow-y: scroll; */
+            overflow: hidden auto;    /* here x is hidden & y is auto. */
+
+            /* The overflow: clip is a property in css which clips the content the overflows the element's box without providing scrollbars. It means rest of the content will be hidden and accessible to the user. */
+            /* overflow: clip; */
+
+            /* The white-space: nowrap CSS property prevents text from wrapping to the next line, ensuring it stays on a single line. */
+            /* white-space: nowrap; */
+
+            /* The text-overflow: ellipsis property in CSS is used to display an ellipsis ("...") to represent clipped text that overflows the element's box. */
+            /* text-overflow: ellipsis; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus consequuntur aperiam
+        possimus voluptatem provident inventore, impedit distinctio eaque sequi neque molestiae sapiente dolor
+        reprehenderit nesciunt quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aliquid quasi maxime
+        itaque architecto, nam minima molestias, voluptatem nulla ipsam excepturi doloribus, odio id. Obcaecati, harum
+        pariatur culpa ullam similique quia rem maiores aperiam consectetur, quod deserunt excepturi earum, numquam
+        magnam ipsum aliquam veritatis temporibus a nam. Laborum libero quo laudantium eius necessitatibus optio
+        doloremque labore quae nisi. Eveniet, quibusdam iusto!</div>
+</body>
+
+</html>

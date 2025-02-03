@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List Using CSS</title>
+    <style>
+        nav > ul> li{
+            /* list-style is used to set list-style like abcd or 1,2,3,4 or other. None is used to remove list-style */
+            /* list-style: none; */
+            padding: 12px;
+            list-style-type: "😁";
+            /* background-color: antiquewhite; */
+            /* list-style-position is used to put list order like 1,2,3 etc inside list or outside */
+            list-style-position: inside;
+            /* border: 2px solid black; */
+            /* list-style-image: inside url('https://th.bing.com/th/id/OIP.NJq5fscXxynOPIT9xX0nUgHaHa?rs=1&pid=ImgDetMain'); */
+            /* here we setted backgrounf of list items */
+            background-color: #4CAF50;
+            /* here we setted list items text color */
+            color: white;
+            /* here we setted margin between list items means space around them */
+            margin: 20px;
+            /* it is used to center list text */
+            text-align:center;
+            /* it is used to set list item font size */
+            font-size: 15px;
+        }
+        ul{
+            /* It is used to tell type of display */
+            display: flex;
+            /* it is used to tell how spacing should be given between flex items or list items */
+            justify-content: space-around;
+            /* It is used to put list items in center */
+            align-items: center;
+            /* It is used to tell height of flex display 12vh = 12% of viewport height */
+            height: 12vh;
+            /* It is used to tell flex background */
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Styling List Using CSS</h3>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Items</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

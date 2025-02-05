@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+*{
+    /* note: by defualt postion will be static of every element in html so we can't set its postion unless we use position property like absolute, relative, fixed, sticky, etc.*/
+
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    border: 2px solid black;
+    margin: 64px;
+    padding: 0px;
+    background-image: url('https://cdn.wallpapersafari.com/0/59/KdQtTj.jpg');
+    /* position: absolute; */
+}
+.box{
+    border: 2px solid black;
+    height: 122px;
+    width: 80vw;
+    margin: 24px;
+    padding: 24px;
+
+}
+.box1{
+    background-color: aquamarine;
+    /* The 'position: sticky' property sticks the element at top or btttom or left or right when mentioned while scrolling */
+    position: sticky;
+    top: 1px;
+    left: 42px;
+    width: 102px;
+    height: 28px;
+}
+.box2{
+    background-color: blanchedalmond;
+
+    /* here relative means now its position can be adjusted relative to top/bottom left/right from its normal position */
+    position: relative;
+    /* these changes take places form its normal position */
+    top: -192px;
+    width: 268px;
+    left: 60vw;
+}
+.box3{
+    background-color: aqua;
+    /* The 'position: absolute' property positions an element relative to its nearest positioned ancestor  */
+    position: absolute;
+    /* it will be 8px from top of its parent ancestor which have postion absolute or relative anything but static*/
+    top: 248px;
+    width: 44vw;
+    left: 10vw;
+}
+.box4{
+    background-color : cornflowerblue;
+    right: 50px;
+    bottom: 0px;
+    padding: 24px;
+    width: 78px;
+    position: fixed; 
+}
+.wordwrap{
+    overflow: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="box box1">I am a Sticky position element</div>
+    <div class="box box2">I am a Relative position element<p class="wordwrap">I change my position relative to my intial postion</p></div>
+    <div class="box">I am a extra box element</div>
+    <div class="box">I am a extra box element</div>
+    <div class="box">I am a extra box element</div>
+    <div class="box">I am a extra box element</div>
+    <div class="box box3">I am a Absolute position element <p class="wordwrap">The 'position: absolute' property positions an element relative to its nearest positioned ancestor</p></div>
+    <div class="box box4"> I am a Fixed position element</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /* :root here we declare global variables */
+        :root {
+            /* This section defines two CSS variables, --color and --seccolor, with specific RGB color values within the :root selector for global scope. */
+            --color: rgb(56, 56, 236);
+            --seccolor: rgb(137, 137, 238);
+            /* defpad is default padding */
+            --defpad: 21px;
+            /* defop is default opacity */
+            --defop: 0.5;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+
+        ul>li {
+            opacity: var(--defop);
+            list-style-type: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+
+        ul li:first-child {
+            /* local variable is decleared here */
+            --color: rgb(255, 89, 0);
+            /* var(variable_name, if variable is not found then what should be done), so here var(--color, rgb(207,60,247)) means that if --color variable is not found then this rgb(207, 60, 247) should be used in his place */
+            background-color: var(--color, rgb(207, 60, 247));
+
+        }
+
+        ul {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore modi, voluptatem iusto nesciunt possimus natus
+        dolor exercitationem blanditiis, a eos commodi suscipit laudantium quidem dolorem veniam quia error
+        necessitatibus repellat consectetur magni. Corporis, pariatur soluta! Qui temporibus officia totam est. Harum,
+        eaque minima! Fuga, veritatis!
+    </div>
+</body>
+
+</html>

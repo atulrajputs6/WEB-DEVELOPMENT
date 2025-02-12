@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Media Query</title>
     <style>
-        body{
+        body {
             background-color: cornflowerblue;
         }
-        @media only screen and (max-width:800px){
-        p{
-            color: gold;
+
+        /* A media query in CSS allows you to apply styles based on the device's characteristics, like screen size. It is mainly used to make responsive designs. */
+
+        /* @media not|only mediatype and (expressions) {
+        CSS Code;
+        } */
+        @media only screen and (max-width:480px) {
+            body {
+                background-color: slateblue;
+            }
+
+            p {
+                color: gold;
+            }
+
+            .boxes {
+                /* flex-direction is used define direction of flex contents or items in display */
+                flex-direction: column;
+            }
         }
-    }
+
+        @media screen and (orientation: landscape) {
+            /* Orientation is used to tell display modes like portrait or landscape */
+            body {
+                border: 2px solid green;
+            }
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 255px;
+            height: 255px;
+            background-color: chartreuse;
+            margin: 4px;
+            padding: 4px;
+        }
     </style>
 </head>
+
 <body>
     <div>
         Hey I am cornflowerblue body guy
         <h2>CSS Media Query</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quas odio, omnis asperiores ipsum hic harum cum assumenda architecto fugit. Illo, exercitationem? Sit praesentium doloremque iure minus exercitationem placeat beatae maiores nihil tenetur labore laudantium quo pariatur distinctio quasi quisquam aut itaque accusantium, qui corporis ducimus sunt, soluta quaerat necessitatibus! Deleniti harum beatae sapiente debitis adipisci.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quas odio, omnis asperiores ipsum hic harum
+            cum assumenda architecto fugit. Illo, exercitationem? Sit praesentium doloremque iure minus exercitationem
+            placeat beatae maiores nihil tenetur labore laudantium quo pariatur distinctio quasi quisquam aut itaque
+            accusantium, qui corporis ducimus sunt, soluta quaerat necessitatibus! Deleniti harum beatae sapiente
+            debitis adipisci.</p>
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 </body>
+
 </html>

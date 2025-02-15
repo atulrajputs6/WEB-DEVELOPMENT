@@ -12,6 +12,7 @@
             --color: rgb(5, 5, 86);
             --seccolor: rgb(225, 184, 133);
             --mbackcolor: yellow;
+            --Bgcolor:azure;
         }
 
         *{
@@ -32,27 +33,62 @@
             width: 98vw;
         }
         .boxes{
-            background-color: azure;
+            background-color: var(--Bgcolor);
             border: 0.6px solid black;
+            height: fit-content;
+            width: fit-content;
         }
         .cards{
             display: grid;
             grid-template-columns: repeat(4, 15fr);
-            gap: 10px;
-            padding: 10px;
+            gap: 40px;
+            padding: 40px;
+            text-align: center;
         }
         .info{
             padding: 8px;
             background-color: var(--seccolor);
             border-radius: 2%;
-            height: 38vh;
-            width: 21.70vw;
+            height: fit-content;
+            width: fit-content;
             text-align: center;
             box-shadow: 8px 8px 15px 2px;
         }
+        .card1{
+            --Cardcolor: rgb(241, 78, 78);
+            background-color: var(--Cardcolor);
+        }
+        .card2{
+            --cardcolor: rgb(247, 227, 93);
+            background-color: var(--cardcolor);
+        }
+        .card3{
+            --Cardcolor: rgba(244, 101, 57, 0.804);
+            background-color: var(--Cardcolor);
+        }
+        .card4{
+            --Cardcolor: rgb(157, 231, 231);
+            background-color: var(--Cardcolor);
+        }
+        .card5{
+            --Cardcolor: rgb(189, 62, 189);
+            background-color: var(--Cardcolor);
+        }
+        .card6{
+            --Cardcolor:rgb(119, 244, 119);
+            background-color:var(--Cardcolor);
+        }
+        .card7{
+            --Cardcolor:rgb(248, 248, 106);
+            background-color: var(--Cardcolor);
+        }
+        .card8{
+            --Cardcolor: #6495ed;
+            background-color:var(--Cardcolor);
+        }
         .coverImg{
-            width: 98vw;
-            height: 80vh;
+            width: fit-content;
+            height: fit-content;
             border-radius: 2%;
             border: 2px solid black;
         }
@@ -71,31 +107,31 @@
     <a href="https://www.instagram.com/mr_rajput._20/" target="_blank"><img class="coverImg" src="screenshot-1739517498562.png" alt="instagram profile"></a>
     <div class="boxes">
         <div class="cards">
-            <div class="info">
+            <div class="info card1">
                 <img class="Cardsimg" src="https://th.bing.com/th/id/OIP.RHzRocDQ-VPOif5AmSbAeQHaKl?w=202&h=289&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="T-sirts">
                 <h4>T-Shirts</h4>
                 <p class="fsize">Type - Cotton T-shirt</p>
-                <p class="fsize">Color - Blue, Green, Red, Black</p>
+                <p class="fsize">Color - Deep Blue, Green, Red, Black</p>
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 1215 left</p>
             </div>
-            <div class="info">
+            <div class="info card2">
                 <img class="Cardsimg"src="https://m.media-amazon.com/images/I/71I-cik1CyL._AC_UL1500_.jpg" alt="Shirts" >
                 <h4>Shirts</h4>
                 <p class="fsize">Type - Cotton Shirt</p>
-                <p class="fsize">Color - Blue, Green, Red, Black, Pink</p>
+                <p class="fsize">Color - Deep Blue, Green, Red, Black</p>
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 815 left</p>
             </div>
-            <div class="info">
+            <div class="info card3">
                 <img src="https://th.bing.com/th/id/OIP.9u9KGKfBg8owyK3f-nxiCQHaJ4?rs=1&pid=ImgDetMain" alt="Cottton Kurta" class="Cardsimg">
                 <h4>Kurta</h4>
                 <p class="fsize">Type - Cotton Kurta</p>
-                <p class="fsize">Color - Blue, Green, Red, Black, Pink</p>
+                <p class="fsize">Color - Deep Blue, Green, Red, Black</p>
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 625 left</p>
             </div>
-            <div class="info">
+            <div class="info card4">
                 <img src="https://th.bing.com/th/id/OIP.LnwKBycBpDFsya3HfGKrHAHaJQ?rs=1&pid=ImgDetMain" alt="Rough Jeans" class="Cardsimg">
                 <h4>Jeans</h4>
                 <p class="fsize">Type - Rough Jeans</p>
@@ -103,7 +139,7 @@
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 415 left</p>
             </div>
-            <div class="info">
+            <div class="info card5">
                 <img src="https://th.bing.com/th/id/OIP.k9BeNlBcqeP2pFkBGa4AtwHaLH?rs=1&pid=ImgDetMain" alt="Trousers" class="Cardsimg">
                 <h4>Trousers</h4>
                 <p class="fsize">Type - Cotton Trousers</p>
@@ -111,27 +147,27 @@
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 615 left</p>
             </div>
-            <div class="info">
+            <div class="info card6">
                 <img src="https://th.bing.com/th/id/R.a4b3be28b1ca315ace7ca2e6e104d036?rik=T9e8yRHbeNiHSw&riu=http%3a%2f%2fonvers.com%2fimages%2fproductImages%2fmedium%2f3-0a4Mu04-37-48.jpg&ehk=4%2btp%2bphldEmVVV9ch520t6cEfjydcecvWl01yIlEVMU%3d&risl=&pid=ImgRaw&r=0" alt="Lowers" class="Cardsimg">
                 <h4>Lowers</h4>
                 <p class="fsize">Type - Cotton Lowers</p>
-                <p class="fsize">Color - Blue, Black, Deep Blue, Grey, Yellow, Red</p>
+                <p class="fsize">Color - Blue, Black, Deep Blue, Grey</p>
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 1115 left</p>
             </div>
-            <div class="info">
+            <div class="info card7">
                 <img src="https://cdna.lystit.com/photos/boohooman/a3624f80/boohooman-designer-black-Bonded-Scuba-Oversized-Hoodie.jpeg" alt="Oversize Hoodie" class="Cardsimg">
                 <h4>Hoodie</h4>
                 <p class="fsize">Type - Oversize Hoodie</p>
-                <p class="fsize">Color - Blue, Black, Brown, Red</p>
+                <p class="fsize">Color - Deep Blue, Black, Grey, Red</p>
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 685 left</p>
             </div>
-            <div class="info">
+            <div class="info card8">
                 <img src="https://th.bing.com/th/id/OIP.5NESiG1ZvqClgK1kmhIYrgHaJ4?rs=1&pid=ImgDetMain" alt="Sports Shoes" class="Cardsimg">
                 <h4>Shoes</h4>
                 <p class="fsize">Type - Sports Shoes</p>
-                <p class="fsize">Color - Blue, Black, Brown, Red</p>
+                <p class="fsize">Color - Deep Blue, Black, Grey, Red</p>
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 685 left</p>
             </div>
@@ -139,7 +175,7 @@
                 <img src="https://www.apetogentleman.com/wp-content/uploads/2019/03/wear-denim-jacket-men-15.jpg" alt="Denim Shirts" class="Cardsimg">
                 <h4>Denim</h4>
                 <p class="fsize">Type - Denim Shirts</p>
-                <p class="fsize">Color - Blue, Black, Brown, Red</p>
+                <p class="fsize">Color - Deep Blue, Black, Grey, Red</p>
                 <p class="fsize">Size - S,M,L,XL,XXL</p>
                 <p class="fsize">Stock - 685 left</p>
             </div>

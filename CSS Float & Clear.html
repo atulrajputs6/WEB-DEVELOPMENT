@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        img{
+            /* To make image float to left float:left; // To make image float to right float:right; */
+            float: right;
+        }
+        .cards{
+            border: 4px solid black;
+            /* display: flow-root; is used to fit content with in container */
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: rgba(255, 127, 80, 0.865);
+            /* clear:right; is used to make sure there is no content on right of this element but we cant float a content on left but if we define as both then it will means that there is no content allowed on both of its side */
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://th.bing.com/th/id/OIP.AJwchRrCqVCVcKaPbsyFdgHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain" alt="anime img" width="250">
+        <!-- img = child-1 for cards -->
+        <div class="card">
+        <!-- div = child-2 for cards -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nobis debitis harum, soluta dolores atque beatae aliquid numquam ea tempore delectus aut mollitia totam saepe magni molestiae provident excepturi</p>
+        </div>
+        <!-- div = child-3 for cards -->
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet, soluta pariatur laborum aliquam quia porro quo nulla, perferendis laboriosam provident laudantium! Saepe consectetur officiis eius. Cupiditate maiores velit modi fuga expedita quibusdam voluptatum, deserunt repudiandae dolore quas mollitia, illum quidem ab, commodi distinctio. Sequi corrupti eius rerum, voluptates, vel officiis placeat eligendi nulla voluptatum magnam dolorum architecto fuga atque ducimus deleniti obcaecati illo tempora soluta omnis nobis reprehenderit. Iste, repellat illum, qui corporis illo nihil sunt, error harum officia quaerat temporibus nam quod cupiditate. At necessitatibus aut recusandae atque nostrum? Magni, quibusdam nobis. Dolorem porro maxime iure neque, ducimus cupiditate voluptatum animi? Accusantium non et hic maiores consequuntur, architecto eius illo totam nobis amet deserunt dolor voluptatem cumque dolorum facere necessitatibus eos. Sit, quo voluptatem corporis commodi expedita soluta veniam officiis aspernatur. Nulla odit hic doloremque. Exercitationem pariatur obcaecati illum quia, incidunt laudantium nihil debitis officia itaque ea temporibus expedita fugiat nobis possimus commodi nemo reprehenderit ipsa similique! Dolorem id, porro fugiat adipisci sed officia natus deleniti! Velit, provident. Optio iste amet labore perferendis earum dolor explicabo sequi error dicta vel, minus est quisquam tempore? Perspiciatis ab, corporis facere sed, itaque atque mollitia magni quidem saepe porro beatae fugiat ratione totam aperiam. Tempore adipisci rerum suscipit eveniet impedit modi iure fugiat inventore odit ad voluptatum magni nam at numquam molestiae, facilis quidem in quasi. Mollitia sequi aperiam vero maxime unde sed porro totam consectetur atque beatae. Nostrum fugit eveniet cumque dolor dolores reprehenderit.</p>
+            </div>
+        <div class="card">I am Third Box</div>
+    </div>
+</body>
+</html>

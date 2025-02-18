@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* It means that if box is a 1st child of its Parent */
+        /* .box:first-child {
+            background-color: aquamarine;
+        } */
+
+        /* it is used to style ::first-line of the element */
+        /* .box::first-line{
+            background-color: burlywood;
+        } */
+
+        /* .boxes *{} here * is used to tell all the elements in boxes class element have these styling which is mentioned in it. */
+        /* .boxes *{
+            color: blueviolet;
+            background-color: rgb(241, 233, 200);
+            border: 2px solid black;
+        } */
+
+        /* data-color="primary" its a attribute selector here i grouped it to all p, all a, all .box classes, & data-color="primary" attribute elements will have this property */
+        /* p, a, .box, [data-color="primary"]{
+            margin-bottom: 42px;
+        } */
+
+        /* it is used to style nth-child of box class (even) = all even class till nth. */
+        /* .box:nth-child(odd){
+            color: rgb(241, 85, 28);
+            background-color: rgb(152, 188, 255);
+        } */
+
+        /* it means 4nd box class from starting.*/
+        /* .box:nth-child(4){
+            background-color: aqua;
+        } */
+
+        /* nth-last-child(2) it means 2nd last box class */
+        /* .box:nth-last-child(2){
+            background-color: chartreuse;
+        } */
+
+        /* it id used to dynamically implement content before a element using CSS. */
+        .boxes::before{
+            content: "Atul is a Very Good boy, its a content which is dynamically implemented using CSS before boxes";
+            color: crimson;
+            border: 2px solid black;
+        }
+
+        /* it id used to dynamically implement content after a element using CSS. // before & after both can be used at the same time. */
+        .boxes::after{
+            content: "Atul is a Very Good boy, its a content which is dynamically implemented using CSS after boxes";
+            color: rgb(177, 0, 216);
+            border: 2px solid black;
+        }
+
+        /* ::slection it is used to style when something is selected then what should happen we can put it for perticular element or universaly by just using ::selction */
+       .box::selection{
+            color: chartreuse;
+            background-color: black;
+        }
+
+        /* it is use to design first letter of the element */
+        .box::first-letter{
+            color: rgb(223, 208, 8);
+            font-size: 42px;
+        }
+
+        input::placeholder{
+            color: rgb(133, 146, 142);
+        }
+
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div  data-color="primary" class="box">Lorem ipsum dolor sit amet, magnam?</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <div class="box">I am a box</div>
+        <label for="myName">
+        What is your name :: <input type="text" placeholder="Type your name" id="myName">
+        </label>
+        <br><br>
+    </div>
+</body>
+
+</html>

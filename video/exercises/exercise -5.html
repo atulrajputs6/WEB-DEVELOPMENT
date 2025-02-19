@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 5</title>
+    <style>
+        :root{
+            --Mhead-color: purple;
+            --body-color: rgb(177, 110, 177);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sticky{
+            background-color: var(--Mhead-color);
+        }
+        ul>li{
+            border: 2px solid black;
+            list-style: none;
+            font-size: 28px;
+            display: inline;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky">
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Category</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+</body>
+</html>

@@ -1,45 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise - 5</title>
     <style>
-        *{
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+        * {
             margin: 0;
             padding: 0;
         }
-       ul>li{
+
+        ul li {
             list-style-type: none;
             display: inline;
-            text-align: center;
-            padding: 8px 15px;
-            border: 2px solid black;
-            border-style: double;
-            border-width: 4px;
-            border-radius: 22%;
-            margin-right: 10px;
-            font-weight: 800;
-            background-color: aquamarine;
-            
+            padding: 24px;
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            /* font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal; */
+            /* background-color: aquamarine; */
         }
-        .header{
-            background-color: rgb(245, 207, 118);
-            padding: 18px;
+
+        nav {
+            padding: 12px 0px;
+            background-color: cornflowerblue;
         }
-        body{
+        header{
+            position: sticky;
+            top: 0px;
+            z-index: 1000;
+        }
+
+        body {
             background-color: rgb(244, 231, 208);
+            border-radius: 15%;
+        }
+        .box{
+            display: inline-block;
+            height: 90vh;
+            width: 40vw;
+            border: 2px solid black;
+            position: relative;
+            margin: 50px;
+            left: 2vw;
+        }
+        .box1{
+            background-color: rgba(226, 128, 147, 0.769);
+        }
+        .box2{
+            background-color: rgba(201, 157, 242, 0.842);
+        }
+        .box3{
+            text-align: center;
+            border: 2px solid black;
+            height: 10vh;
+            width: 80vw;
+            position: relative;
+            left: 10vw;
+            border-radius: 15px;
+        }
+        .box4{
+            text-align: center;
+            font-size: 42px;
+        }
+        .img-div{
+            position: absolute;
+        }
+        img{
+            height: 44px;
+            width: 44px;
+            border-radius: 50%;
+            position: fixed;
+            left: 92vw;
+            bottom: 10px;
         }
     </style>
 </head>
+
 <body>
-    <div class="header">
-        <ul>
-            <li>Home</li>
-            <li>Category</li>
-            <li>About</li>
-            <li>Contact Us</li>
-        </ul>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Category</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box box1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est animi voluptatem perspiciatis corrupti minima ex vitae? Perspiciatis nesciunt enim assumenda consequatur expedita eaque dolorem, dolore porro doloremque eos culpa, magnam accusamus dignissimos inventore minima exercitationem praesentium illo molestias suscipit unde cum ex! Fugiat quam inventore atque soluta obcaecati quis earum rem expedita enim aperiam reiciendis illum vero amet, cumque explicabo consequatur, minus ut quaerat? Minima harum, expedita animi sed voluptas quae molestiae exercitationem corporis at, culpa rem perspiciatis sint iste ea voluptatum nesciunt facere perferendis a modi? Aspernatur eius, nisi consequatur eum quidem similique magni maxime voluptatem consequuntur omnis voluptates? Eos odio dolorum ratione possimus harum, accusamus ducimus dolore minus magni ipsa autem commodi culpa voluptatibus nihil alias aliquid saepe expedita, incidunt, natus illo facilis velit itaque? Qui illo corrupti eveniet. Dolorem eaque sunt magni aut voluptatum omnis veritatis cupiditate, a rem! Voluptate, quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum cumque et, labore accusantium, exercitationem odio libero obcaecati tempora at perferendis assumenda illo. Animi et doloribus quos quidem nisi, vero eaque velit eos laborum tempora nesciunt quod omnis iure, unde odio recusandae ipsum aspernatur? Quos, beatae fugiat optio dicta vero voluptatibus voluptatum enim rerum vitae temporibus sunt delectus architecto hic illum, voluptatem quae voluptas esse eos ullam ipsum cumque adipisci quibusdam dolor. Enim sequi odio cum doloribus dolores aperiam voluptates laborum blanditiis nemo obcaecati amet nihil illo ut possimus, vero harum incidunt! Quo vel nisi quisquam dolorum. In commodi sequi laudantium nulla harum ratione ut? Veritatis nobis optio recusandae praesentium sequi harum excepturi iure similique saepe, placeat incidunt qui velit aut neque temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas quam iure culpa veritatis. Voluptates veniam rerum quos voluptate ad, facilis dolor maiores nulla corrupti beatae consequatur optio?</p>
+    </div>
+    <div class="box box2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est animi voluptatem perspiciatis corrupti minima ex vitae? Perspiciatis nesciunt enim assumenda consequatur expedita eaque dolorem, dolore porro doloremque eos culpa, magnam accusamus dignissimos inventore minima exercitationem praesentium illo molestias suscipit unde cum ex! Fugiat quam inventore atque soluta obcaecati quis earum rem expedita enim aperiam reiciendis illum vero amet, cumque explicabo consequatur, minus ut quaerat? Minima harum, expedita animi sed voluptas quae molestiae exercitationem corporis at, culpa rem perspiciatis sint iste ea voluptatum nesciunt facere perferendis a modi? Aspernatur eius, nisi consequatur eum quidem similique magni maxime voluptatem consequuntur omnis voluptates? Eos odio dolorum ratione possimus harum, accusamus ducimus dolore minus magni ipsa autem commodi culpa voluptatibus nihil alias aliquid saepe expedita, incidunt, natus illo facilis velit itaque? Qui illo corrupti eveniet. Dolorem eaque sunt magni aut voluptatum omnis veritatis cupiditate, a rem! Voluptate, quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum, quos aperiam, nulla eveniet dicta suscipit veniam maxime id atque cumque adipisci soluta ipsum laboriosam commodi velit expedita facere aspernatur in aut. Repudiandae dolores illum harum veritatis eius molestias quibusdam autem voluptates quos reprehenderit. Perspiciatis amet molestiae commodi at cumque ipsum eum totam doloremque quae asperiores, quasi iure exercitationem fugit, consectetur facere neque delectus? Dicta minima qui ullam architecto deleniti ratione vero. Aut iure commodi obcaecati optio illum distinctio, explicabo iste ullam eveniet ad placeat velit dolor ex et autem, totam minus adipisci ipsa consequatur quia deserunt, perspiciatis consectetur facere. Deleniti dolorum quis aspernatur? Nisi autem eveniet error sequi repellat. Earum perspiciatis quam dicta alias odit, veniam fugit rerum doloribus numquam tempore! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum eligendi laboriosam nihil iste consequuntur deserunt asperiores, sequi maxime molestiae! In, reiciendis. Cupiditate esse nam facilis id? Accusantium, dolores!</p>
+    </div>
+    <div class="img-div">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/596/678/original/circle-line-logo-template-vector-icon.jpg" alt="logo">
+    </div>
+
+    <div  class="box3">
+        <p  class="box4">Welcome to this Sigma Web Development Express</p>
     </div>
 </body>
+
 </html>

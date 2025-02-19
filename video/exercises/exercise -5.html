@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise - 5</title>
     <style>
-        :root{
-            --Mhead-color: purple;
-            --body-color: rgb(177, 110, 177);
-        }
         *{
             margin: 0;
             padding: 0;
         }
-        .sticky{
-            background-color: var(--Mhead-color);
-        }
-        ul>li{
-            border: 2px solid black;
-            list-style: none;
-            font-size: 28px;
+       ul>li{
+            list-style-type: none;
             display: inline;
-            position: sticky;
+            text-align: center;
+            padding: 8px 15px;
+            border: 2px solid black;
+            border-style: double;
+            border-width: 4px;
+            border-radius: 22%;
+            margin-right: 10px;
+            font-weight: 800;
+            background-color: aquamarine;
+            
+        }
+        .header{
+            background-color: rgb(245, 207, 118);
+            padding: 18px;
+        }
+        body{
+            background-color: rgb(244, 231, 208);
         }
     </style>
 </head>
 <body>
-    <div class="sticky">
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Category</li>
-                <li>About</li>
-                <li>Contact us</li>
-            </ul>
-        </nav>
-    </header>
+    <div class="header">
+        <ul>
+            <li>Home</li>
+            <li>Category</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
     </div>
 </body>
 </html>

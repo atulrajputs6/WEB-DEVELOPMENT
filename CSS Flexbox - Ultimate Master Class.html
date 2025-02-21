@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid rebeccapurple;
+            /* width: 20vw; */
+            height: 80vh;
+            
+            display: flex;
+            flex-direction: row;
+            /* flex-flow: row wrap; */
+
+            /* row-gap: 10px; */
+            /* column-gap: 60px; */
+            /* gap: 20px; */
+            gap: 10px 60px;
+            
+            /* This Property is used to wrap cotent in a way so the new content which is overflows comes in new line */
+            /* flex-wrap: wrap; */
+            
+            /* justify-content: center is used make content horizontally center aligned.  It follows main axes of flex direction*/
+            /* justify-content: center; */
+            /* There is not justify-items in flex box. */
+            
+            /* align-items: center is used to align content of a single line at vertically center. It follows Cross Axes of flex direction. */
+            align-items: center;
+
+            /* Align-content is used for multiple line */
+            /* align-content: flex-start; */
+        }
+        .item{
+            height: 48px;
+            width: 48px;
+            background-color: crimson;
+            border: 2px solid black;
+
+            /* here i defined that this flex-item will take space of 1 items , by default its stays 0*/
+            /* flex-grow: 0; */
+        }
+        .order1{
+            /* default order:0; */
+            /* order is property which is used to set order of items */
+            order: 1;
+
+            /* Ability of a flex item to shrink if necessaary, 2 stands for twice speed of normal shrinking. */
+            flex-shrink: 2;
+        }
+        .order2{
+            order:2;
+
+            /* here i defined that this flex-item will take space of 4 items */
+            /* flex-grow: 2; */
+        }
+        .order3{
+            order: 3;
+            /* align-self is used to align a single item or itself */
+            align-self: flex-end;
+        }
+        .order4{
+            order:4;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item order1">1</div>
+            <div class="item order2">2</div>
+            <div class="item order3">3</div>
+            <div class="item order4">50</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+</html>
